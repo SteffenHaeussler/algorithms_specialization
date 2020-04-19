@@ -1,0 +1,1 @@
+from course_1.week_1.multiplication._karatsuba import multiplication
