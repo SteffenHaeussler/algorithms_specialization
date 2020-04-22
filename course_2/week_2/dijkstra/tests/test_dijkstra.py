@@ -36,20 +36,20 @@ def prepare_data(fixture):
     graph = {}
     test_distances = {}
 
-    test_graph = fixture["in"].rstrip().split('\n')
-    test_graph = [i.split('\n')[0].split('\t') for i in test_graph]
+    test_graph = fixture["in"].rstrip().split("\n")
+    test_graph = [i.split("\n")[0].split("\t") for i in test_graph]
 
     for edges in test_graph:
         node = int(edges[0])
-        graph[node] ={}
+        graph[node] = {}
         for edge in edges[1:]:
-            node_2, length = edge.split(',')
+            node_2, length = edge.split(",")
             graph[node][int(node_2)] = int(length)
 
     test_result = fixture["out"].rstrip()
     test_result = [int(i) for i in test_result.split(",")]
 
-    test_path = fixture["path"].rstrip().split('\n')
+    test_path = fixture["path"].rstrip().split("\n")
     test_path = [i.split(" => path => ") for i in test_path]
     test_path = [[j.split(",") for j in i] for i in test_path]
     test_path = {int(i[0][0]): [int(j) for j in i[1]] for i in test_path}

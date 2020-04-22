@@ -24,6 +24,7 @@ def kosaraju(graph: List[Tuple]) -> Union[Dict, List, Dict]:
     node_position : dict
             node position on the original graph
     """
+
     def prepare_graph(temp_graph: List) -> Union[Dict, Dict]:
         """
         prepare graph to an adjacency list and revert it
@@ -68,13 +69,13 @@ def kosaraju(graph: List[Tuple]) -> Union[Dict, List, Dict]:
         positional_graph = {}
 
         for node_1, adj_nodes in graph.items():
-            positional_graph[node_position[node_1]] = \
-                [node_position[node_2] for node_2 in adj_nodes]
+            positional_graph[node_position[node_1]] = [
+                node_position[node_2] for node_2 in adj_nodes
+            ]
 
         return positional_graph
 
-
-    def dfs_loop(graph: Dict)-> Union[Dict, List, Dict]:
+    def dfs_loop(graph: Dict) -> Union[Dict, List, Dict]:
         """
         DFS loop for calculating ssc (topological sort)
 
@@ -93,7 +94,7 @@ def kosaraju(graph: List[Tuple]) -> Union[Dict, List, Dict]:
         node_position : dict
                 node position on the original graph
         """
-        nodes =  list(set(chain(*graph.values())) | set(graph.keys()))
+        nodes = list(set(chain(*graph.values())) | set(graph.keys()))
 
         def dfs(graph, _node):
             """
@@ -121,7 +122,7 @@ def kosaraju(graph: List[Tuple]) -> Union[Dict, List, Dict]:
                 node_positions[_node] = counter
 
         counter = 1
-        ssc_node =[]
+        ssc_node = []
         ssc = {}
         node_positions = {}
         visited = set()
@@ -133,7 +134,6 @@ def kosaraju(graph: List[Tuple]) -> Union[Dict, List, Dict]:
                 dfs(graph, node)
 
         return ssc, ssc_node, node_positions
-
 
     original_graph, reversed_graph = prepare_graph(graph)
 

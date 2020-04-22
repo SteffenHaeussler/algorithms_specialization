@@ -1,7 +1,8 @@
 import heapq
 from typing import Dict, Tuple
 
-def dijkstra(graph: Dict, start:int =1) -> Tuple[Dict, Dict]:
+
+def dijkstra(graph: Dict, start: int = 1) -> Tuple[Dict, Dict]:
     """
     Dijkstra implementation with heap
     This implementation calculates the shortest path to all nodes

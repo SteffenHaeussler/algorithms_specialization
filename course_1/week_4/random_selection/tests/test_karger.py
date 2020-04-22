@@ -29,8 +29,8 @@ class TestRSelect:
 
 def prepare_input(array):
 
-    array = array.split('\n')
-    array = [i.split(' ') for i in array if i != '']
+    array = array.split("\n")
+    array = [i.split(" ") for i in array if i != ""]
     array = [[int(i) for i in j] for j in array]
     array = {i[0]: i[1:] for i in array}
 

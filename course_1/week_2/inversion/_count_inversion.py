@@ -18,7 +18,6 @@ def sort_and_count(A: List) -> Union[List, int]:
         number of split inversions of A
     """
 
-
     if len(A) == 1:
         return A, 0
     else:

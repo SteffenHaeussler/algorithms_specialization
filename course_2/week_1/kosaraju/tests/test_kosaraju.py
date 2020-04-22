@@ -30,20 +30,20 @@ class TestStronglyConectedCompounds:
         counter = sorted(ssc.values(), reverse=True)[:5]
 
         if len(counter) < 5:
-            counter += [0] * (5-len(counter))
+            counter += [0] * (5 - len(counter))
 
         assert counter == test_result
 
 
 def prepare_fixture(fixture):
 
-    _input = fixture["in"].rstrip().split('\n')
-    _input = [i.split(' ')[:2] for i in _input]
+    _input = fixture["in"].rstrip().split("\n")
+    _input = [i.split(" ")[:2] for i in _input]
     _input = [[int(i) for i in j] for j in _input]
     _input = [tuple(i) for i in _input]
 
     _output = fixture["out"].rstrip()
-    _output = _output.split(',')
+    _output = _output.split(",")
     _output = [int(i) for i in _output]
 
     return _input, _output
