@@ -24,13 +24,13 @@ def two_sum(array, min_limit=-10000, max_limit=10000):
 
     array_hash = {int(n) for n in array}
 
-    for target in range(min_limit, max_limit+1):
+    for target in range(min_limit, max_limit + 1):
         for x in array_hash:
-            if (target-x in array_hash) and (2 * x != target):
+            if (target - x in array_hash) and (2 * x != target):
                 counter += 1
                 break
 
-        # if any(target-x in array_hash and 2 * x != target for x in array_hash):
+            # if any(target-x in array_hash and 2 * x != target for x in array_hash):
             counter += 1
 
     return counter
