@@ -2,7 +2,6 @@ from typing import List, Sequence, Tuple
 
 
 class Memoize:
-
     def __init__(self, fn):
         self.fn = fn
         self.memo = {}
@@ -46,8 +45,7 @@ def knapsack(items: Sequence[Tuple], max_weight: int) -> Tuple[int, Tuple]:
         if weight > j:
             return bestvalue(i - 1, j)
         else:
-            return max(bestvalue(i - 1, j),
-                       bestvalue(i - 1, j - weight) + value)
+            return max(bestvalue(i - 1, j), bestvalue(i - 1, j - weight) + value)
 
     j = max_weight
     result = []

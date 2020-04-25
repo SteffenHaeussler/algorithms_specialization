@@ -19,14 +19,14 @@ class TestKnapsck:
     )
     def test_knapsack(self, fixture):
 
-        array = fixture["in"].rstrip().split('\n')
+        array = fixture["in"].rstrip().split("\n")
 
-        max_weight = int(array[0].split(' ')[0])
-        num_items = int(array[0].split(' ')[1])
+        max_weight = int(array[0].split(" ")[0])
+        num_items = int(array[0].split(" ")[1])
 
-        array = [item.split(' ') for item in array[1:]]
+        array = [item.split(" ") for item in array[1:]]
         array = [tuple(int(i) for i in item) for item in array]
-        array.insert(0, (0,0))
+        array.insert(0, (0, 0))
 
         sys.setrecursionlimit(50000)
         weight, packed_items = knapsack(array, max_weight)

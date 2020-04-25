@@ -18,10 +18,10 @@ class TestClustering:
     )
     def test_mst(self, fixture):
 
-        graph = fixture["in"].rstrip().split('\n')
+        graph = fixture["in"].rstrip().split("\n")
         nodes = int(graph[0])
 
-        graph = [tuple([int(n) for n in edge.split(' ')]) for edge in graph[1:]]
+        graph = [tuple([int(n) for n in edge.split(" ")]) for edge in graph[1:]]
         graph = sorted(graph, key=lambda x: x[2])
 
         clusters = clustering(graph, nodes, 4)

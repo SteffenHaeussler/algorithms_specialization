@@ -30,3 +30,6 @@ Currently, the following modules have been implemented:
 - [Knapcksack](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_3/week_4/knapsack)
 
 ## Course 4 - Shortest paths
+
+- [Floyd Warshall](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_1/all_pair_shortest_path)
+

@@ -18,7 +18,7 @@ class TestHuffman:
     )
     def test_huffman(self, fixture):
 
-        array = fixture["in"].rstrip().split('\n')
+        array = fixture["in"].rstrip().split("\n")
 
         nums = int(array[0])
         array = [int(i) for i in array[1:]]

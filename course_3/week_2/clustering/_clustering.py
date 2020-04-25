@@ -2,7 +2,7 @@ def clustering(graph, nodes, k):
     """Needs some refactoring - tests are successful, but the results look odd
     """
     visited = set()
-    cluster = list(range(1,nodes+1))
+    cluster = list(range(1, nodes + 1))
     cluster = [(i,) for i in cluster]
 
     while len(cluster) > k:
@@ -11,7 +11,6 @@ def clustering(graph, nodes, k):
 
         if first_node not in visited and second_node not in visited:
 
-
             visited.add(first_node)
             visited.add(second_node)
 
@@ -19,7 +18,6 @@ def clustering(graph, nodes, k):
             cluster.remove((second_node,))
 
             cluster.append(tuple((first_node, second_node)))
-
 
         elif first_node not in visited:
 
@@ -54,7 +52,6 @@ def clustering(graph, nodes, k):
     return cluster
 
 
-
 def find_shortest(graph, cluster):
     seeking = True
 
@@ -69,6 +66,6 @@ def find_shortest(graph, cluster):
             continue
 
         else:
-            seeking=False
+            seeking = False
 
         return weight

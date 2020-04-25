@@ -23,16 +23,16 @@ def mwis(array: List) -> List:
     n = len(array)
     weights = [0, array[0]]
 
-    for i in range(2, n+1):
-        weights.append(max(weights[i-1], weights[i-2]+array[i-1]))
+    for i in range(2, n + 1):
+        weights.append(max(weights[i - 1], weights[i - 2] + array[i - 1]))
 
     i = n
 
     while i > 1:
-        if weights[i-1] >= weights[i-2] + array[i-1]:
+        if weights[i - 1] >= weights[i - 2] + array[i - 1]:
             i -= 1
         else:
-            S.append(i-1)
+            S.append(i - 1)
             i -= 2
 
     return S
