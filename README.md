@@ -32,4 +32,5 @@ Currently, the following modules have been implemented:
 ## Course 4 - Shortest paths
 
 - [Floyd Warshall](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_1/all_pair_shortest_path)
+- [Held Karp](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_2/held_karp)
 
