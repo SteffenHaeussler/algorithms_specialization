@@ -34,4 +34,5 @@ Currently, the following modules have been implemented:
 - [Floyd Warshall](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_1/all_pair_shortest_path)
 - [Held Karp](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_2/held_karp)
 - [TSP NN](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_3/tsp_nn)
+- [Two Sat](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_4/two_sat) - Needs implementation!
 
