@@ -27,6 +27,6 @@ Currently, the following modules have been implemented:
 - [Prim's minimal spanning tree](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_3/week_1/prims_mst)
 - [Clustering](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_3/week_2/clustering)
 - [Maximum weight independence set](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_3/week_3/max_weight_independent_set)
-
+- [Knapcksack](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_3/week_4/knapsack)
 
 ## Course 4 - Shortest paths
