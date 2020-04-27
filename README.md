@@ -1,9 +1,9 @@
 # algorithms_specialization
 
 My implementation of algorithms from the [coursera/stanford course](https://www.coursera.org/specializations/algorithms)
-and tested with the ["official tests"](https://github.com/beaunus/stanford-algs)
-
-Following algorithms were part of the course:
+and tested with the ["official tests"](https://github.com/beaunus/stanford-algs).
+This implementations follow  mostly the lectures by Roughgarden. In my next life, I would stick more to Cormen et al., Skiena and othres, who already
+provide code. My intention was to learn and suffer, so that out of curiosity I can grow. Also revisiting this code after two years, helped me to recognize, how well my path went. I'm looking forward to have a look to this code in two years.
 
 Currently, the following modules have been implemented:
 
@@ -34,5 +34,5 @@ Currently, the following modules have been implemented:
 - [Floyd Warshall](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_1/all_pair_shortest_path)
 - [Held Karp](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_2/held_karp)
 - [TSP NN](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_3/tsp_nn)
-- [Two Sat](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_4/two_sat) - Needs implementation!
+- [Two Sat](https://github.com/SteffenHaeussler/algorithms_specialization/tree/master/course_4/week_4/two_sat) - Lost code / Needs implementation!
 
